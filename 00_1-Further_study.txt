@@ -1,0 +1,11 @@
+FURTHER STUDY
+
+Bij, from lines, is calculated as Vij^2/Zij. 
+
+The line impedance is calculated as Z = 0.4 (Ohm/km) x line_length (km) / number_of_lines.
+
+The 0.4 comes from Figure 3 from [Athari 2018], where it can be seen that the reactance does not depend of voltage. Resistance depends of voltage (Figure 11) but it is not considered on the calculation of Z. The number of lines is due to in a real network double lines can appear, but in this model just one line is considered (therefore, number_of_lines = 1). The line_length can be approximated from the real maps, such as Google Maps, linearly.
+
+Since Vij is something fixed, Zij is something more variable. It has been observed, but not represented, that for Bij < 1 (approximately can also be 1.5-2 depending on the simulation) the fluctuations tend to be very big and could cause problems. This could happen for very long lines, and it is an object of further study.
+
+The problem to study is: how the network could be affected so fluctuations out of the normative can be caused? It has been demonstrated that they are not caused by adding more nodes, but by adding more wind power. But, can they be affected by line distance? However, it has been checked that the line length to affect the network is so big (order of thousand of km) that it is not possible for real power networks.
